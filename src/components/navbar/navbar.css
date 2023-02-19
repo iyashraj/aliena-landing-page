@@ -1,0 +1,308 @@
+.navbar-main {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background: #6d0eb1;
+  color: #fff;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  font-weight: 500;
+  font-size: 16px;
+  position: fixed;
+  z-index: 1;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-left img {
+  height: 65px;
+  width: 65px;
+}
+.nav-left p {
+  font-size: 26px;
+}
+.nav-right {
+  display: flex;
+}
+.nav-right .hamburger-menu-icons {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+.nav-right .nav-links {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.nav-right-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 40px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  height: 30px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-arrow {
+  font-weight: 600;
+}
+.nav-links a:focus {
+  color: #e69010;
+  border-bottom: 3px solid #e69010;
+}
+.nav-links a:hover {
+  color: #e69010;
+  border-bottom: 3px solid #e69010;
+}
+.logo-class {
+  min-height: 20px;
+  min-width: 20px;
+}
+.logo-class:focus {
+  color: #e69010;
+}
+.logo-class:hover {
+  color: #e69010;
+}
+
+/* ------- For extremely small screen devices (350px and below) --------- */
+@media only screen and (max-width: 350px) {
+  .nav-top {
+    position: relative;
+  }
+  .navbar-main {
+    width: 100%;
+    height: auto;
+    padding: 0 7px;
+  }
+  .nav-left p {
+    display: none;
+  }
+  .nav-left img {
+    height: 50px;
+    width: 50px;
+  }
+  .nav-right .nav-links {
+    display: none;
+  }
+  .nav-right .hamburger-menu-icons {
+    display: block;
+  }
+  .nav-right .nav-right-logos {
+    display: none;
+  }
+  .open-menu-items {
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    height: auto;
+    width: 60%;
+    background-color: #6d0eb1;
+    padding: 5px 10px;
+    right: 0;
+  }
+  .open-menu-items a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 0px 25px 0px;
+    transition: all 0.2s ease-in-out;
+    width: 45%;
+    height: 25px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .open-menu-items a:focus {
+    color: #e69010;
+    /* border-bottom: 3px solid #e69010; */
+    transform: scale(1.15);
+  }
+  .open-menu-items a:hover {
+    color: #e69010;
+    transform: scale(1.15);
+    /* border-bottom: 3px solid #e69010; */
+  }
+}
+
+/* --------- small screen devices (min-width 351px and max-width 767px ) ---------- */
+@media only screen and (max-width: 767px) and (min-width: 351px) {
+  .nav-top {
+    position: relative;
+  }
+  .navbar-main {
+    width: 100%;
+    height: auto;
+    padding: 0 7px;
+  }
+  .nav-left p {
+    display: block;
+    font-size: 22px;
+  }
+  .nav-left img {
+    height: 50px;
+    width: 50px;
+  }
+  .nav-right .nav-links {
+    display: none;
+  }
+  .nav-right .hamburger-menu-icons {
+    display: block;
+  }
+  .nav-right .nav-right-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;  }
+  .open-menu-items {
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    height: auto;
+    width: 60%;
+    background-color: #6d0eb1;
+    padding: 5px 10px;
+    right: 0;
+  }
+  .open-menu-items a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 0px 25px 0px;
+    transition: all 0.2s ease-in-out;
+    width: 45%;
+    height: 25px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .open-menu-items a:focus {
+    color: #e69010;
+    /* border-bottom: 3px solid #e69010; */
+    transform: scale(1.15);
+  }
+  .open-menu-items a:hover {
+    color: #e69010;
+    transform: scale(1.15);
+    /* border-bottom: 3px solid #e69010; */
+  }
+  .logo-class {
+    min-height: 20px;
+    min-width: 20px;
+  }
+  .logo-class:focus {
+    color: #e69010;
+  }
+  .logo-class:hover {
+    color: #e69010;
+  }
+
+}
+
+/* -------- medium screen devices (768px and abouve) ------------- */
+@media only screen and (max-width: 888px) and (min-width: 768px) {
+  .nav-top {
+    position: relative;
+  }
+  .navbar-main {
+    width: 100%;
+    height: auto;
+    padding: 0 7px;
+  }
+  .nav-left{
+    gap: 0px !important;
+  }
+  .nav-left p {
+    display: block;
+    font-size: 22px;
+  }
+  .nav-left img {
+    height: 55px;
+    width: 55px;
+    padding: 5px;
+  }
+  .nav-right .nav-links {
+    display: none;
+    
+  }
+  .nav-right .hamburger-menu-icons {
+    display: block;
+  }
+  .nav-right .nav-right-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .open-menu-items {
+    color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    height: auto;
+    width: 100%;
+    background-color: #6d0eb1;
+    padding: 8px 100px;
+    right: 0;
+  }
+  .open-menu-items a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 0px 25px 0px;
+    transition: all 0.2s ease-in-out;
+    width: 45%;
+    height: 25px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .open-menu-items a:focus {
+    color: #e69010;
+    border-bottom: 3px solid #e69010;
+    transform: scale(1.15);
+  }
+  .open-menu-items a:hover {
+    color: #e69010;
+    transform: scale(1.15);
+    border-bottom: 3px solid #e69010;
+  }
+  .logo-class {
+    min-height: 25px;
+    min-width: 25px;
+  }
+  .logo-class:focus {
+    color: #e69010;
+  }
+  .logo-class:hover {
+    color: #e69010;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 889px) {
+  .nav-right .nav-links {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+}

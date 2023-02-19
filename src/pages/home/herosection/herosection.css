@@ -1,0 +1,256 @@
+.carousel-container {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgb(94, 11, 154) 41%,
+    rgb(219, 46, 207) 100%,
+    rgb(98, 29, 131) 100%
+  );
+  background-size: 400% 400%;
+  animation: bganim 4s infinite ease-in-out;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  flex-direction: column;
+}
+.home-main {
+  min-width: 100%;
+  width: 100%;
+  /* height: 89vh; */
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.firstHeading {
+  color: #ffffff;
+}
+.mainHeading {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.secondHeading {
+  color: #ffffff;
+  font-size: 21px;
+}
+.btnsWrapper {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+.btnsWrapper button {
+  height: 50px;
+  width: 225px;
+  border-radius: 30px;
+  background-color: #ed1c94;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.activeAnims {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.btnsWrapper button:hover {
+  background-color: #981df0;
+  border: 2px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+#btn2 {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+#btn2:hover {
+  color: #ffffff;
+  background-color: #981df0;
+  transition: all 0.2s ease-in-out;
+}
+.mainHeadingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.empty-square {
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  rotate: 45deg;
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wave-container {
+  height: 2vh;
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 20vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23FFF5EE'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 13px;
+  }
+}
+
+@keyframes bganim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* ------- For extremely small screen devices (350px and below) --------- */
+@media only screen and (max-width: 350px) {
+  .home-main {
+    gap: 28px;
+  }
+  .mainHeadingWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .empty-square {
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    rotate: 45deg;
+  }
+  .mainHeading {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .secondHeading,
+  .firstHeading {
+    color: #ffffff;
+    font-size: 17px;
+    /* padding: 5px; */
+    width: 90%;
+  }
+  .btnsWrapper {
+    display: flex;
+    gap: 6px;
+    margin-top: 35px;
+  }
+  .btnsWrapper button {
+    height: 35px;
+    width: 140px;
+    border-radius: 30px;
+    background-color: #ed1c94;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  #btn2 {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  #btn2:hover {
+    color: #ffffff;
+    background-color: #981df0;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+/* --------- small screen devices (min-width 351px and max-width 767px ) ---------- */
+@media only screen and (max-width: 767px) and (min-width: 351px) {
+  .home-main {
+    gap: 28px;
+    min-width: 100%;
+    width: 100%;
+    /* height: 89vh; */
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  .mainHeadingWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .empty-square {
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    rotate: 45deg;
+  }
+  .mainHeading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .secondHeading,
+  .firstHeading {
+    color: #ffffff;
+    font-size: 17px;
+    /* padding: 5px; */
+    width: 90%;
+    text-align: center;
+  }
+  .btnsWrapper {
+    display: flex;
+    gap: 6px;
+    margin-top: 35px;
+  }
+  .btnsWrapper button {
+    height: 35px;
+    width: 140px;
+    border-radius: 30px;
+    background-color: #ed1c94;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+}

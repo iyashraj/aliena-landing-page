@@ -1,0 +1,14 @@
+.reviewcard-main{
+    height: 40vh;
+    width: 40%;
+    display: flex;
+
+}
+.client-pic{
+    height: 178px;
+    width: 178px;
+    border-radius: 10px;
+}
+.review-thoughts{
+    font-size: 14px;
+}

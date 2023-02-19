@@ -1,0 +1,45 @@
+.work-card-main {
+  height: auto;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 15px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 198px;
+  gap: 20px;
+}
+.card-logo {
+  height: 30px !important;
+  width: 35px !important;
+  color: #ffffff;
+}
+
+.card-title {
+  color: #ffec17;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 100%;
+  line-break: normal;
+  line-height: 20px;
+}
+.card-bio {
+  line-height: 20px;
+  line-break: anywhere;
+  color: #ffffff;
+  opacity: .6;
+}
+
+@media only screen and (max-width: 350px) {
+  .work-card-main{
+    height: auto;
+    width: 230px;
+    overflow: scroll;
+  }
+}
