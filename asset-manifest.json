@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/aliena-landing-page/static/css/main.72bed4e6.css",
+    "main.js": "/aliena-landing-page/static/js/main.5427bdcb.js",
+    "static/media/side-image.png": "/aliena-landing-page/static/media/side-image.4bac13ad7101acbf414d.png",
+    "index.html": "/aliena-landing-page/index.html",
+    "main.72bed4e6.css.map": "/aliena-landing-page/static/css/main.72bed4e6.css.map",
+    "main.5427bdcb.js.map": "/aliena-landing-page/static/js/main.5427bdcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72bed4e6.css",
+    "static/js/main.5427bdcb.js"
+  ]
+}
